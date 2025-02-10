@@ -26,7 +26,7 @@ During this challenge, we have also experimented using larger, more accurate mod
 
 As an alternative to light-weight models, we have also tried using SVM from sklearn library instead of MLP.
 
-# Results
+# Results (unofficial)
 We train each model on the same 80% of the data and test them on the same 20%. Energy and emissions might vary depending on hardware used.
 
 | Model | Size (M) | Accuracy | F1 macro | MCC average | energy_consumed_wh | emissions_gco2eq | 0_not_relevant | 1_not_happening | 2_not_human | 3_not_bad | 4_solutions_harmful_unnecessary | 5_science_is_unreliable | 6_proponents_biased | 7_fossil_fuels_needed |
