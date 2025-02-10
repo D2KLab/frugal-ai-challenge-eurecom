@@ -27,7 +27,7 @@ During this challenge, we have also experimented using larger, more accurate mod
 As an alternative to light-weight models, we have also tried using SVM from sklearn library instead of MLP.
 
 # Results
-We train each model on the same 80% of the data and test them on the same 20%
+We train each model on the same 80% of the data and test them on the same 20%. Energy and emissions might vary depending on hardware used.
 
 | Model | Size (M) | Accuracy | F1 macro | MCC average | energy_consumed_wh | emissions_gco2eq | 0_not_relevant | 1_not_happening | 2_not_human | 3_not_bad | 4_solutions_harmful_unnecessary | 5_science_is_unreliable | 6_proponents_biased | 7_fossil_fuels_needed |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -42,6 +42,11 @@ We train each model on the same 80% of the data and test them on the same 20%
 
 # Hugging Face models
 Our trained models are shared on HuggingFace:
-* [Sbert + MLP](https://huggingface.co/ypesk/frugal-ai-EURECOM-mlp-768) / [Sbert + MLP (full data)](https://huggingface.co/ypesk/frugal-ai-EURECOM-mlp-768-fullset)
+* **Sbert + MLP**: [80%](https://huggingface.co/ypesk/frugal-ai-EURECOM-mlp-768) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-mlp-768-fullset)
+* **Modern-BERT-large**: [80%](https://huggingface.co/ypesk/frugal-ai-modern-large-baseline) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-modern-large-fullset)
+* **Modern-BERT-base**: [80%](https://huggingface.co/ypesk/frugal-ai-modern-base-baseline) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-modern-base-fullset)
+* **gte-large**: [80%](https://huggingface.co/ypesk/frugal-ai-gte-large-baseline) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-gte-large-fullset)
+* **gte-base**: [80%](https://huggingface.co/ypesk/frugal-ai-gte-base-baseline) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-gte-base-fullset)
+* **CT-BERT**: [80%](https://huggingface.co/ypesk/frugal-ai-EURECOM-ct-bert-baseline) / [full data](https://huggingface.co/ypesk/frugal-ai-EURECOM-ct-bert-fullset)
 
 
