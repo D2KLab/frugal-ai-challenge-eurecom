@@ -10,7 +10,7 @@ We then train a very lightweight Multi Layer Perceptron classifier, with the fol
 `768 → 100 → 100 → 100 → 50 → 8`
  
 
-We use the AdamW optimizer with a learning rate of 5e-4, and a weighted CrossEntropy loss function, with weights inversely proportional to the number of sample of the given class.
+We use the AdamW optimizer with a learning rate of 5e-4, and a weighted CrossEntropy loss function, with weights inversely proportional to the number of sample of the given class. The code is available in the [Winning-submission notebook](Winning-submission.ipynb)
 
 Our goal was to have a model that can compute inference fast to reduce emissions, as the MLP only has 64k parameters. This also means that this model is very fast to train, therefore also reducing the emissions during training compared to larger models (BERT-based, etc.).
 
@@ -25,6 +25,8 @@ During this challenge, we have also experimented using larger, more accurate mod
 * [covid-twitter-bert](https://huggingface.co/digitalepidemiologylab/covid-twitter-bert) (336M parameters)
 
 As an alternative to light-weight models, we have also tried using SVM from sklearn library instead of MLP.
+
+The code for the other experiments is available in the [other-experiments notebook](other-experiments.ipynb). Change the variable MODEL for the different available models.
 
 # Results (unofficial)
 We train each model on the same 80% of the data and test them on the same 20%. Energy and emissions might vary depending on hardware used.
