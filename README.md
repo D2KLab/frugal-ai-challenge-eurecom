@@ -26,7 +26,7 @@ During this challenge, we have also experimented using larger, more accurate mod
 
 As an alternative to light-weight models, we have also tried using SVM from sklearn library instead of MLP.
 
-The code for the other experiments is available in the [other-experiments notebook](other-experiments.ipynb). Change the variable MODEL for the different available models.
+The code for the other experiments is available in the [other-experiments notebook](other-experiments.ipynb). Change the variable `MODEL` for the different available models.
 
 # Results (unofficial)
 We train each model on the same 80% of the data and test them on the same 20%. Energy and emissions might vary depending on hardware used.
